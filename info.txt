@@ -1,0 +1,24 @@
+Pozycja w nawigacji:
+- focusOff dla list
+
+Szukaj:
+- pokaz formularz
+- pokaz wyniki
+
+Timer:
+- select projektów
+- nowy projekt
+- wybór projektu
+- select zadań
+- nowe zadanie
+- wybór zadania
+- start 
+- stop
+
+Lista:
+- generuj listę
+- dodaj pozycję
+- edytuj pozycję 
+- usun pozycję 
+- pokaż pozycję
+

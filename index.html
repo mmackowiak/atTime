@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<title>@time</title>
+		<link rel="stylesheet" href="./styles/style.css">
+	</head>
+	<body>
+		<!-- <div id="splashScreen" class="transition-500ms"></div> -->
+		<nav>
+			<ul id="navigation">
+				<!-- <li class="configuration">
+					
+				</li>
+				<li class="notifications">
+					<ul>
+						<li></li>
+					</ul>
+					<span class="number">2</span>
+				</li> -->
+				<li class="search">
+					<div class="box gradient-blue">
+						<input type="text" placeholder="szukaj" autocomplete="off" class="input-basic" />
+					</div>
+				</li>
+				<li id="timer">
+					<div class="box gradient-blue">
+						<ul class="steps chooseProject transition-200ms">
+							<li class="project transition-200ms">
+								<div class="select gradient-blue transition-200ms">
+									<div>
+										<span class="label">wybierz projekt</span>
+										<ul>
+											<li data-value="1">Bla bla</li>
+											<li data-value="2">Bla bla 2</li>
+										</ul>
+									</div>
+									<input type="text" class="input-basic">
+									<span class="selected"></span>
+								</div>
+							</li>
+							<li class="task transition-200ms">
+								<div class="select gradient-blue transition-200ms">
+									<div>
+										<span class="label">wybierz zadanie</span>
+										<ul>
+											<li>Bla bla</li>
+										</ul>
+									</div>
+									<input type="text" class="input-basic">
+									<span class="selected"></span>
+								</div>
+							</li>
+						</ul>
+						<button class="add-blue" title="dodaj">dodaj</button>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div id="content">
+			<section id="lists" class="clear transition-350ms">
+				<article id="projects" class="visible transition-350ms">
+					<h1>Lista projektów</h1>
+					<button class="add-white" title="dodaj">dodaj</button>
+					<div class="itemForm form transition-350ms" data-collection="projects">
+						<input type="text" class="input-basic" name="title" placeholder="nowy projekt" />
+						<button class="add-blue confirm" title="dodaj">dodaj</button>
+					</div>
+					<div class="wrapper transition-350ms">
+						<ul class="list clear"></ul>
+					</div>
+				</article>
+				<article id="tasks" class="transition-350ms">
+					<h1></h1>
+					<button class="add-white" title="dodaj">dodaj</button>
+					<div class="itemForm form transition-350ms" data-collection="tasks">
+						<input type="text" class="input-basic" name="title" placeholder="nowe zadanie" />
+						<button class="add-blue confirm" title="dodaj">dodaj</button>
+					</div>
+					<div class="wrapper transition-350ms">
+						<ul class="list"></ul>
+					</div>
+				</article>
+				<article id="entries" class="transition-350ms">
+					<h1></h1>
+					<button class="add-white" title="dodaj">dodaj</button>
+					<div class="clock">
+						<ul>
+							<li class="hour">0</li>
+							<li class="hour">0</li>
+							<li class="minute">0</li>
+							<li class="minute">0</li>
+						</ul>
+					</div>
+					<div class="entryForm form transition-350ms" data-collection="entries">
+						<div class="paperSheet">
+							<ul class="time">
+								<li class="inputs start clear">
+									<input type="text" class="date" name="startDate" maxlength="10" />
+									<input type="text" class="hour" name="startHour" maxlength="5" />
+								</li>
+								<li class="inputs end clear">
+									<input type="text" class="date" name="stopDate" maxlength="10" />
+									<input type="text" class="hour" name="stopHour" maxlength="5" />
+								</li>
+							</ul>
+							<textarea class="comment" name="comment"></textarea>
+							<button class="confirm" title="Potwierdź">Dodaj wpis</button>
+							<button class="cancel" title="Anuluj">&nbsp;</button>
+						</div>
+					</div>
+					<div class="wrapper transition-350ms">
+						<ul class="list"></ul>
+					</div>
+				</article>
+			</section>
+			<section id="reports">
+
+			</section>
+			<footer>
+				
+			</footer>
+		</div>
+		<script type="text/javascript" src="./js/include.min.js"></script>
+		<script type="text/javascript">
+			include([
+				'js/zepto.min.js',
+    			'js/mustache.min.js',
+    			'js/moment.min.js'
+			], function(){
+			    include(['js/atTime.js']);
+			});
+		</script>
+	</body>
+</html>
